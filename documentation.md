@@ -1,0 +1,86 @@
+# Facundo Construction Website & SEO Documentation
+
+**Project:** Facundo Construction (facunoconstruction.com)  
+**Date:** December 18, 2025  
+**Built By:** Zo Computer (for Leland/Miguel Facundo)  
+**Stack:** Next.js 15 (App Router), Tailwind CSS v4, Vercel
+
+---
+
+## 1. Project Overview & Architecture
+We rebuilt the Facundo Construction digital presence from the ground up to transition from a generic "home builder" site to a **dominating local authority** in Residential, Commercial, and Civil construction.
+
+The site uses a **Headless/Static Hybrid Architecture**:
+- **Framework**: Next.js 15 (React) for server-side rendering and static site generation.
+- **Styling**: Tailwind CSS v4 for lightweight, utility-first styling.
+- **Hosting**: Vercel Global Edge Network for sub-second load times.
+
+---
+
+## 2. The 5 Pillars of SEO: Implementation Strategy
+
+We applied the 5 Pillars of SEO directly into the codebase. Here is how each was handled:
+
+### I. Technical SEO (The Foundation)
+*   **Core Web Vitals**: The site is built on Next.js, which automatically optimizes images (`next/image`), scripts, and fonts. This ensures LCP (Largest Contentful Paint) and CLS (Cumulative Layout Shift) scores are in the "Green" zone.
+*   **Mobile-First Design**: Tailwind CSS was used to build mobile views *first*, expanding to desktop. This passes Google's "Mobile-Friendly" test by default.
+*   **Clean URL Structure**: We abandoned query parameters (e.g., `?page=services`) in favor of semantic, hierarchical URLs (e.g., `/services/custom-homes/river-oaks`).
+*   **Robots.txt & Sitemap**: dynamically generated in `app/robots.ts` and `app/sitemap.ts` to ensure Google crawls every single pSEO page.
+
+### II. On-Page SEO (The Content Structure)
+*   **Semantic HTML**: We used proper `<main>`, `<section>`, `<h1>`, `<h2>` tags.
+    *   *Example*: The Hero has a single `<h1>`, service sections use `<h2>`, and features use `<h3>`.
+*   **Keyword Optimization**:
+    *   **Primary Keywords**: "Custom Home Builder", "Commercial Construction", "Civil Structural".
+    *   **Placement**: Keywords are injected dynamically into Page Titles, H1s, and Meta Descriptions.
+*   **Internal Linking**: The footer and "Nearby Locations" sections create a mesh of internal links, passing "link juice" from the homepage to deep service pages.
+
+### III. Content SEO (The Meat)
+*   **Positioning**: We shifted the narrative from "general contractor" to **"Residential. Commercial. Civil. From Start to Finish."** This targets higher-value commercial contracts while keeping the luxury home allure.
+*   **Scraped & Curated Imagery**: We performed an "APE" scrape of the old site to recover 400+ authentic project photos, ensuring no stock photos were used. Google rewards unique, original imagery.
+*   **Service Deep Dives**: Each service (e.g., "Home Additions") has unique descriptions, value propositions, and feature lists.
+
+### IV. Local SEO (The Geography)
+*   **NAP Consistency**: Name, Address, and Phone Number (NAP) are hardcoded in the `Footer` and `Contact` page to match exactly what will be on the Google Business Profile.
+    *   *Name*: FACUNDO CONSTRUCTION
+    *   *Address*: Garden Oaks, Houston, TX 77018
+*   **Geo-Targeting**: The pSEO engine (see below) explicitly names neighborhoods (e.g., "River Oaks", "West University") in the content, signaling to Google that we are relevant for *those specific* local searches.
+
+### V. Authority / Trust (The Reputation)
+*   **HTTPS/SSL**: Secured automatically via Vercel.
+*   **Social Proof**: "Since 2004" and "Over 20 years" trust signals are prominent.
+*   **Portfolio Verification**: The Gallery page serves as proof of work, which is critical for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).
+
+---
+
+## 3. Programmatic SEO (pSEO) Implementation
+
+This is the engine under the hood that allows Facundo Construction to punch above its weight.
+
+### The Logic
+Instead of manually writing 100 pages for every service in every neighborhood, we built a **Content Generation Engine**.
+
+**Equation**: `[Service]` + `[Location]` = `[Unique Landing Page]`
+
+### The Data Structure (`lib/pseo-data.ts`)
+We defined two constant arrays:
+1.  **Services**: Custom Homes, Kitchen Remodeling, Commercial, Civil, etc.
+    *   *Contains*: Slug, Title, Short Desc, Full Desc, Feature Lists, Specific Images.
+2.  **Locations**: Garden Oaks, River Oaks, Memorial, West U, etc.
+    *   *Contains*: Slug, Name, Zip Codes, Neighborhood Description.
+
+### The Dynamic Routing (`app/services/[service]/[location]/page.tsx`)
+Next.js creates these pages on the fly (or at build time):
+1.  **`generateStaticParams`**: This function calculates every possible combination (Service × Location) at build time.
+    *   *Result*: 5 Services × 7 Locations = **35 Instant Landing Pages**.
+2.  **Dynamic Metadata**:
+    *   The page title dynamically becomes: `"Custom Home Building in River Oaks | Facundo Construction"`.
+    *   The description becomes: `"Professional custom home building services in River Oaks..."`.
+3.  **Content Injection**:
+    *   The page injects the **Service Description**.
+    *   It injects the **Location Name**.
+    *   It injects a custom paragraph: *"At Facundo Construction, we understand the unique architectural requirements... of [Location Name]."*
+
+### The Result
+When a user searches for "Civil construction in Garden Oaks", Google sees a dedicated, fast-loading, highly relevant page just for that query—giving Facundo Construction a massive advantage over competitors who only have a generic "Services" page.
+
