@@ -55,7 +55,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                 We provide a true <strong>turnkey experience</strong>. You give us the vision; we handle the rest. 
-                Permitting, site work, framing, finishes, and final delivery. We do it all, from soup to nuts.
+                Permitting, site work, framing, finishes, and final delivery. We do it all, from start to finish.
               </p>
               <Link href="/about" className="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center group">
                 Meet Miguel Facundo <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -127,6 +127,7 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
 
