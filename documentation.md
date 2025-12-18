@@ -53,7 +53,30 @@ We applied the 5 Pillars of SEO directly into the codebase. Here is how each was
 
 ---
 
-## 3. Programmatic SEO (pSEO) Implementation
+## 3. Answer Engine Optimization (AEO) Strategy
+
+While SEO targets Google's search list, **AEO (Answer Engine Optimization)** targets AI models like ChatGPT, Perplexity, and Google's AI Overviews.
+
+We implemented a specific AEO layer to ensure AI agents "understand" Facundo Construction:
+
+### 1. Structured Data (Schema Markup)
+We injected `LocalBusiness` JSON-LD schema into the homepage. This speaks the native language of search engines.
+*   **What it does**: Explicitly tells AI models: "This is a Construction Company. Here is the phone number. Here are the hours. Here is the exact service area."
+*   **Why it matters**: When a user asks Siri or ChatGPT "Find a custom home builder in Garden Oaks", the AI parses this structured data to provide a direct answer.
+
+### 2. Entity Optimization (Knowledge Graph)
+We optimized the content to establish "Facundo Construction" as a distinct Entity in the Knowledge Graph.
+*   **Consistency**: By strictly enforcing "Residential. Commercial. Civil." across the site, we train AI models to associate the brand with these specific capabilities.
+*   **Clear Definitions**: The "Who We Are" and "What We Do" sections are written in direct, factual sentences (Subject-Verb-Object) which are easier for LLMs to ingest and cite.
+
+### 3. Q&A Formatting (The "Direct Answer")
+The pSEO pages are structured to answer the implicit question: *"Do you do [Service] in [Location]?"*
+*   **The Answer**: "Yes. Facundo Construction provides [Service] in [Location]."
+*   This direct matching increases the probability of being featured as the "Answer" in zero-click searches.
+
+---
+
+## 4. Programmatic SEO (pSEO) Implementation
 
 This is the engine under the hood that allows Facundo Construction to punch above its weight.
 
@@ -84,7 +107,7 @@ Next.js creates these pages on the fly (or at build time):
 ### The Result
 When a user searches for "Civil construction in Garden Oaks", Google sees a dedicated, fast-loading, highly relevant page just for that query—giving Facundo Construction a massive advantage over competitors who only have a generic "Services" page.
 
-## 4. Future pSEO Roadmap & Autonomous Maintenance
+## 5. Future pSEO Roadmap & Autonomous Maintenance
 
 ### The "Expansion" Strategy (Phase 2 & 3)
 The current pSEO engine has been "unlocked" to cover 18+ high-value Houston neighborhoods.
@@ -101,5 +124,6 @@ We have deployed a **C&L Strategy Autonomous Agent** (running on Zo Computer inf
 *   **Reporting**: It compiles a performance report and emails it to the stakeholders, ensuring transparency and proving ROI.
 
 This "Set It and Forget It" system ensures Facundo Construction doesn't just launch strong, but *stays* ahead of the competition algorithmically.
+
 
 
