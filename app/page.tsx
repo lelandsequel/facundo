@@ -1,143 +1,100 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Hammer, Home, Ruler } from 'lucide-react';
+import { ArrowRight, Hammer, Home, Ruler, Building2, HardHat } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/DSC_2911_livingroom_kitchen.jpeg" // Using one of the best scraped images
-            alt="Luxury Custom Home Interior"
+            src="/images/DSC_2911_livingroom_kitchen.jpeg"
+            alt="Facundo Construction Luxury Home"
             fill
-            className="object-cover"
+            className="object-cover brightness-50"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
         </div>
-
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
-          <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight mb-6 drop-shadow-lg">
-            Build Your Dream in Houston
+        
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
+            Residential. Commercial. Civil.<br/>
+            <span className="text-orange-500">From Soup to Nuts.</span>
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-10 max-w-3xl mx-auto drop-shadow-md text-gray-100">
-            Premier custom home building and luxury remodeling in Garden Oaks, The Heights, and beyond.
+          <p className="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-3xl mx-auto">
+            We build it all. Turnkey construction services for any project, any scale.
+            From the first shovel in the ground to the final coat of paint.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/contact" 
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-sm text-lg font-semibold transition-all hover:scale-105"
-            >
+            <Link href="/contact" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-sm font-semibold transition-colors text-lg">
               Start Your Project
             </Link>
-            <Link 
-              href="/gallery" 
-              className="bg-white/10 backdrop-blur-sm border border-white hover:bg-white hover:text-gray-900 text-white px-8 py-4 rounded-sm text-lg font-semibold transition-all"
-            >
+            <Link href="/gallery" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-sm font-semibold transition-colors text-lg">
               View Our Work
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">Our Expertise</h2>
-            <div className="h-1 w-20 bg-orange-600 mx-auto rounded-full" />
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              With over 20 years of experience, we deliver excellence in every beam, brick, and blueprint.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Custom Home Building",
-                description: "From concept to keys, we build bespoke homes that reflect your lifestyle and legacy.",
-                icon: Home,
-                image: "/images/DSC_2925_masterbed.jpeg",
-                link: "/services/custom-homes"
-              },
-              {
-                title: "Luxury Remodeling",
-                description: "Transforming existing spaces into modern masterpieces. Kitchens, baths, and full-home renovations.",
-                icon: Hammer,
-                image: "/images/Kitchen-copy_SM.jpeg",
-                link: "/services/remodeling"
-              },
-              {
-                title: "Commercial Construction",
-                description: "Reliable commercial build-outs and construction services for businesses in Houston.",
-                icon: Ruler,
-                image: "/images/3.png", // Using the icon/image from old site for commercial if it fits, or better yet a project image
-                link: "/services/commercial"
-              }
-            ].map((service, index) => (
-              <div key={index} className="group bg-white shadow-lg overflow-hidden rounded-sm hover:shadow-xl transition-shadow">
-                <div className="relative h-64 overflow-hidden">
-                  <Image 
-                    src={service.image} 
-                    alt={service.title} 
-                    fill 
-                    className="object-cover group-hover:scale-105 transition-transform duration-500" 
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
-                  <service.icon className="absolute bottom-4 left-4 h-8 w-8 text-white" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 font-serif">{service.title}</h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <Link href={service.link} className="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-            ))}
+      {/* Intro Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-orange-600 font-bold tracking-wider uppercase mb-2">The Facundo Standard</h2>
+              <h3 className="text-4xl font-serif font-bold text-gray-900 mb-6">Building Anything. Building Everything.</h3>
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                Miguel Facundo is not just a home builder. He is a builder in the truest sense. 
+                With over 20 years of experience in Houston, Facundo Construction handles every aspect of the build process. 
+                Residential luxury estates, complex commercial build-outs, and heavy civil structural work.
+              </p>
+              <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                We provide a true <strong>turnkey experience</strong>. You give us the vision; we handle the rest. 
+                Permitting, site work, framing, finishes, and final delivery. We do it all, from soup to nuts.
+              </p>
+              <Link href="/about" className="text-orange-600 font-semibold hover:text-orange-700 inline-flex items-center group">
+                Meet Miguel Facundo <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+            <div className="relative h-[600px] w-full">
+              <Image 
+                src="/images/FacundoHouse_41st_front-copy-1024x953.jpg"
+                alt="Facundo Construction Project"
+                fill
+                className="object-cover rounded-sm shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About/CTA Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[600px] w-full rounded-sm overflow-hidden shadow-2xl">
-              <Image 
-                src="/images/FacundoHouse_41st_front-copy-1024x953.jpg" 
-                alt="Miguel Facundo"
-                fill
-                className="object-cover"
-              />
+      {/* Services Grid */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif font-bold text-gray-900 mb-4">Complete Construction Capabilities</h2>
+            <p className="text-xl text-gray-600">Residential, Commercial, and Civil solutions under one roof.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
+              <Home className="w-12 h-12 text-orange-600 mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Residential</h3>
+              <p className="text-gray-600 mb-6">Custom homes, luxury remodeling, and complex additions. We build your legacy.</p>
+              <Link href="/services/custom-homes" className="text-orange-600 font-medium hover:underline">Learn more</Link>
             </div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">
-                Building with Integrity & Passion
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Facundo Builders has been one of Houston’s leading home builders for over two decades. We take pride in the fact that we have been able to provide continued quality in home building and remodeling to this wonderful city.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                In addition to a variety of custom homes being built in Oak Forest & Garden Oaks, we have expanded our reach to Bellaire, Memorial, River Oaks, Galveston, Friendswood, and Richmond.
-              </p>
-              <div className="flex items-center gap-4">
-                <Link 
-                  href="/about" 
-                  className="bg-gray-900 text-white px-8 py-3 rounded-sm font-semibold hover:bg-gray-800 transition-colors"
-                >
-                  Our Story
-                </Link>
-                <div className="flex flex-col">
-                  <span className="text-sm text-gray-500 font-medium uppercase tracking-wider">Contact Miguel</span>
-                  <a href="tel:2812357375" className="text-xl font-bold text-orange-600 hover:text-orange-700 font-serif">
-                    (281) 235-7375
-                  </a>
-                </div>
-              </div>
+            <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
+              <Building2 className="w-12 h-12 text-orange-600 mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Commercial</h3>
+              <p className="text-gray-600 mb-6">Restaurants, retail spaces, and office build-outs delivered on time and on budget.</p>
+              <Link href="/services/commercial-construction" className="text-orange-600 font-medium hover:underline">Learn more</Link>
+            </div>
+            <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow">
+              <HardHat className="w-12 h-12 text-orange-600 mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Civil & Structural</h3>
+              <p className="text-gray-600 mb-6">Foundations, drainage, and heavy structural work. We build the backbone of your project.</p>
+              <Link href="/services/civil-construction" className="text-orange-600 font-medium hover:underline">Learn more</Link>
             </div>
           </div>
         </div>
@@ -166,4 +123,5 @@ export default function HomePage() {
     </div>
   );
 }
+
 

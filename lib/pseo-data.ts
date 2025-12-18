@@ -3,37 +3,55 @@ export const services = [
     id: "custom-homes",
     title: "Custom Home Building",
     slug: "custom-homes",
-    shortDescription: "Bespoke luxury homes built to your exact specifications.",
-    fullDescription: "At Facundo Builders, custom home building is our signature service. We don't just build houses; we craft legacies. From the initial architectural drawings to the final walk-through, Miguel Facundo works directly with you to ensure every detail reflects your vision. We specialize in modern, traditional, and transitional styles, utilizing premium materials and expert craftsmanship.",
-    features: ["Architectural Design Support", "Premium Material Sourcing", "Energy Efficient Construction", "Smart Home Integration"],
+    shortDescription: "Bespoke luxury homes built from the ground up, tailored to your vision.",
+    fullDescription: "From initial concept to final walkthrough, we deliver turnkey custom home building services. Whether it's a modern masterpiece or a traditional estate, we handle every detail from soup to nuts.",
+    features: ["Architectural Design", "Project Management", "Luxury Finishes", "Turnkey Delivery", "Site Preparation"],
     image: "/images/DSC_2911_livingroom_kitchen.jpeg"
   },
   {
-    id: "remodeling",
-    title: "Luxury Remodeling",
-    slug: "remodeling",
-    shortDescription: "Transforming existing homes with high-end renovations.",
-    fullDescription: "Love your location but need a change? Our luxury remodeling services breathe new life into older homes. Whether it's opening up a floor plan, updating a chef's kitchen, or creating a spa-like master bath, we handle complex renovations with the same care as new construction.",
-    features: ["Kitchen & Bath Specialists", "Structural Modifications", "Historic Restorations", "Second Story Additions"],
+    id: "kitchen-remodeling",
+    title: "Kitchen Remodeling",
+    slug: "kitchen-remodeling",
+    shortDescription: "Gourmet kitchen transformations that blend functionality with high-end design.",
+    fullDescription: "We transform outdated kitchens into culinary havens. Our comprehensive approach covers everything from structural changes to fine cabinetry installation.",
+    features: ["Custom Cabinetry", "High-End Appliances", "Structural Changes", "Lighting Design", "Countertop Installation"],
     image: "/images/Kitchen-copy_SM.jpeg"
   },
   {
-    id: "commercial",
-    title: "Commercial Construction",
-    slug: "commercial",
-    shortDescription: "Reliable build-outs for Houston businesses.",
-    fullDescription: "Facundo Builders brings the same level of detail to commercial projects. We understand timelines and budgets are critical for your business. We specialize in retail build-outs, office renovations, and boutique commercial spaces.",
-    features: ["Retail Build-outs", "Office Renovations", "Restaurant Construction", "Code Compliance & Permitting"],
+    id: "bathroom-renovations",
+    title: "Bathroom Renovations",
+    slug: "bathroom-renovations",
+    shortDescription: "Spa-like bathroom retreats designed for relaxation and elegance.",
+    fullDescription: "Turn your bathroom into a personal spa. We handle plumbing, tiling, and fixtures with precision craftsmanship.",
+    features: ["Custom Tiling", "Walk-in Showers", "Vanity Installation", "Plumbing Upgrades", "Spa Features"],
     image: "/images/3.png"
   },
   {
-    id: "outdoor-living",
-    title: "Outdoor Living & Pools",
-    slug: "outdoor-living",
-    shortDescription: "Resort-style backyards, pools, and patios.",
-    fullDescription: "Extend your living space outdoors. We design and build custom pools, outdoor kitchens, covered patios, and landscaping that turn your backyard into a private retreat perfect for Houston's climate.",
-    features: ["Custom Pools & Spas", "Outdoor Kitchens", "Pergolas & Patios", "Hardscaping"],
+    id: "home-additions",
+    title: "Home Additions",
+    slug: "home-additions",
+    shortDescription: "Seamless expansions that add value and space to your home.",
+    fullDescription: "Expand your living space without compromising on style. We build second-story additions, guest suites, and extended living areas that match your existing home perfectly.",
+    features: ["Second Story Additions", "Guest Suites", "Garage Expansions", "Sunrooms", "Seamless Integration"],
     image: "/images/Pool_LG-copy.jpeg"
+  },
+  {
+    id: "commercial-construction",
+    title: "Commercial Construction",
+    slug: "commercial-construction",
+    shortDescription: "Turnkey commercial build-outs for restaurants, offices, and retail.",
+    fullDescription: "We bring the same level of detail from our luxury homes to commercial projects. From restaurants to office build-outs, we deliver spaces that drive business.",
+    features: ["Restaurant Build-outs", "Office Interiors", "Retail Spaces", "Code Compliance", "Turnkey Project Management"],
+    image: "/images/Liberty+Kitchen+Garden+Oaks+copy.JPG"
+  },
+  {
+    id: "civil-construction",
+    title: "Civil & Structural",
+    slug: "civil-construction",
+    shortDescription: "Heavy civil work, concrete foundations, and structural development.",
+    fullDescription: "Our capabilities extend beyond the home. We handle civil engineering challenges, concrete foundations, drainage systems, and structural development from the ground up.",
+    features: ["Concrete Foundations", "Drainage Systems", "Structural Framing", "Site Development", "Retaining Walls"],
+    image: "/images/structure5_web.jpeg"
   }
 ];
 
@@ -81,4 +99,5 @@ export const locations = [
     description: "one of Houston's most prestigious neighborhoods."
   }
 ];
+
 
