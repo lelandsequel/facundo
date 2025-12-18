@@ -97,8 +97,69 @@ export const locations = [
     slug: "west-university",
     zipCodes: ["77005"],
     description: "one of Houston's most prestigious neighborhoods."
+  },
+  {
+    name: "Tanglewood",
+    slug: "tanglewood",
+    zipCodes: ["77056"],
+    description: "known for its sprawling boulevards and luxury estates."
+  },
+  {
+    name: "Rice Military",
+    slug: "rice-military",
+    zipCodes: ["77007"],
+    description: "a hotspot for modern townhomes and urban luxury living."
+  },
+  {
+    name: "Montrose",
+    slug: "montrose",
+    zipCodes: ["77006"],
+    description: "Houston's cultural hub, perfect for eclectic and modern renovations."
+  },
+  {
+    name: "Southampton",
+    slug: "southampton",
+    zipCodes: ["77005"],
+    description: "a historic neighborhood blending architectural tradition with modern luxury."
+  },
+  {
+    name: "Hyde Park",
+    slug: "hyde-park",
+    zipCodes: ["77006"],
+    description: "offering a unique blend of historic charm and walkable urban living."
+  },
+  {
+    name: "Piney Point Village",
+    slug: "piney-point",
+    zipCodes: ["77024"],
+    description: "one of the wealthiest communities in Texas, known for massive wooded lots."
+  },
+  {
+    name: "Hunters Creek Village",
+    slug: "hunters-creek",
+    zipCodes: ["77024"],
+    description: "an exclusive enclave offering privacy and luxury estate living."
+  },
+  {
+    name: "Bunker Hill Village",
+    slug: "bunker-hill",
+    zipCodes: ["77024"],
+    description: "a quiet, wooded retreat perfect for private custom estates."
+  },
+  {
+    name: "Meyerland",
+    slug: "meyerland",
+    zipCodes: ["77096"],
+    description: "a community focused on resilient, elevated new construction."
+  },
+  {
+    name: "Spring Branch",
+    slug: "spring-branch",
+    zipCodes: ["77055", "77080"],
+    description: "a rapidly evolving area with large lots ideal for new custom builds."
   }
 ];
+
 
 
 

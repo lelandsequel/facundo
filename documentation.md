@@ -2,7 +2,7 @@
 
 **Project:** Facundo Construction (facunoconstruction.com)  
 **Date:** December 18, 2025  
-**Built By:** Zo Computer (for Leland/Miguel Facundo)  
+**Built By:** C&L Strategy  
 **Stack:** Next.js 15 (App Router), Tailwind CSS v4, Vercel
 
 ---
@@ -83,4 +83,23 @@ Next.js creates these pages on the fly (or at build time):
 
 ### The Result
 When a user searches for "Civil construction in Garden Oaks", Google sees a dedicated, fast-loading, highly relevant page just for that query—giving Facundo Construction a massive advantage over competitors who only have a generic "Services" page.
+
+## 4. Future pSEO Roadmap & Autonomous Maintenance
+
+### The "Expansion" Strategy (Phase 2 & 3)
+The current pSEO engine has been "unlocked" to cover 18+ high-value Houston neighborhoods.
+*   **Current State**: 6 Services × 18 Locations = **108 Unique Landing Pages**.
+*   **Future Vertical Expansion**: We plan to add "Niche" services such as *Barndominiums*, *Outdoor Living*, and *Commercial Build-outs* (Medical/Retail).
+*   **Result**: This will scale the site to **160+ pages** without writing new code, simply by adding to the data structure.
+
+### The Autonomous SEO Agent
+We have deployed a **C&L Strategy Autonomous Agent** (running on Zo Computer infrastructure) to maintain and grow this digital asset.
+
+*   **Monthly Audits**: On the 1st of every month, the agent scans the site using Lighthouse and custom SEO heuristics.
+*   **Rank Tracking**: It monitors SERP positions for key terms like "Custom Home Builder Garden Oaks".
+*   **Content Opportunities**: The agent analyzes search trends and suggests new "Service + Location" combinations to add to the pSEO engine.
+*   **Reporting**: It compiles a performance report and emails it to the stakeholders, ensuring transparency and proving ROI.
+
+This "Set It and Forget It" system ensures Facundo Construction doesn't just launch strong, but *stays* ahead of the competition algorithmically.
+
 
