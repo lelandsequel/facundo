@@ -38,18 +38,13 @@ export default function AboutPage() {
                 Miguel Facundo founded Facundo Construction with a simple philosophy: <strong>be the guy who can build anything.</strong>
               </p>
               <p>
-                While many builders specialize in just one niche, Facundo Construction offers a complete, turnkey solution for any construction need. We don't just sub out the hard work; we understand it.
+                While many builders stay in their lane—only doing spec homes or small renovations—Facundo Construction thrives on complexity. We are one of the few firms in Houston with the in-house expertise to execute <strong>Residential, Commercial, and Civil</strong> projects simultaneously.
               </p>
               <p>
-                From pouring complex concrete foundations for civil projects to installing the finest Italian marble in a luxury custom home, our team has the expertise to handle it all.
+                When you hire us, you aren't just getting a general contractor who subcontracts everything and marks up the price. You are getting a builder who understands the structural integrity of a commercial foundation just as well as the fine millwork of a luxury kitchen.
               </p>
               <p>
-                <strong>Residential:</strong> We build legacies. Custom homes that define neighborhoods.
-                <br/><strong>Commercial:</strong> We build businesses. Restaurants and offices that work.
-                <br/><strong>Civil:</strong> We build infrastructure. Foundations and structures that last.
-              </p>
-              <p>
-                When you hire Facundo Construction, you aren't getting a middleman. You are getting a builder who takes ownership of the project from soup to nuts.
+                We handle the dirty work and the detail work. From the first pour of concrete to the final fixture installation, we control the quality. You aren't getting a middleman. You are getting a builder who takes ownership of the project from start to finish.
               </p>
             </div>
             
@@ -64,5 +59,6 @@ export default function AboutPage() {
     </div>
   );
 }
+
 
 

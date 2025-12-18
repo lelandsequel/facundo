@@ -4,7 +4,7 @@ export const services = [
     title: "Custom Home Building",
     slug: "custom-homes",
     shortDescription: "Bespoke luxury homes built from the ground up, tailored to your vision.",
-    fullDescription: "From initial concept to final walkthrough, we deliver turnkey custom home building services. Whether it's a modern masterpiece or a traditional estate, we handle every detail from soup to nuts.",
+    fullDescription: "From initial concept to final walkthrough, we deliver turnkey custom home building services. Whether it's a modern masterpiece or a traditional estate, we handle every detail from concept to completion.",
     features: ["Architectural Design", "Project Management", "Luxury Finishes", "Turnkey Delivery", "Site Preparation"],
     image: "/images/DSC_2911_livingroom_kitchen.jpeg"
   },
@@ -40,7 +40,7 @@ export const services = [
     title: "Commercial Construction",
     slug: "commercial-construction",
     shortDescription: "Turnkey commercial build-outs for restaurants, offices, and retail.",
-    fullDescription: "We bring the same level of detail from our luxury homes to commercial projects. From restaurants to office build-outs, we deliver spaces that drive business.",
+    fullDescription: "We bring the same level of detail from our luxury homes to commercial projects. We understand that time is money for your business, so we prioritize efficient timelines without sacrificing quality. From restaurants to office spaces, we handle the entire build-out.",
     features: ["Restaurant Build-outs", "Office Interiors", "Retail Spaces", "Code Compliance", "Turnkey Project Management"],
     image: "/images/Liberty+Kitchen+Garden+Oaks+copy.JPG"
   },
@@ -99,5 +99,6 @@ export const locations = [
     description: "one of Houston's most prestigious neighborhoods."
   }
 ];
+
 
 

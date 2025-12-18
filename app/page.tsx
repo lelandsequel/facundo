@@ -6,33 +6,37 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-end pb-24 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/DSC_2911_livingroom_kitchen.jpeg"
             alt="Facundo Construction Luxury Home"
             fill
-            className="object-cover brightness-50"
+            className="object-cover"
             priority
           />
+          {/* Gradient Overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
-            Residential. Commercial. Civil.<br/>
-            <span className="text-orange-500">From Soup to Nuts.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-3xl mx-auto">
-            We build it all. Turnkey construction services for any project, any scale.
-            From the first shovel in the ground to the final coat of paint.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-sm font-semibold transition-colors text-lg">
-              Start Your Project
-            </Link>
-            <Link href="/gallery" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-sm font-semibold transition-colors text-lg">
-              View Our Work
-            </Link>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl border-l-4 border-orange-600 pl-8 md:pl-12 py-2">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
+              Building Legacies <br/>
+              <span className="text-orange-500">Since 2004</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light tracking-wide">
+              Residential. Commercial. Civil. <br/>
+              <span className="text-white font-medium">One builder for everything.</span>
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-sm text-lg font-semibold transition-all hover:pl-10 flex items-center w-fit">
+                Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+              <Link href="/gallery" className="bg-white/10 backdrop-blur-md border border-white/30 text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-sm text-lg font-semibold transition-all w-fit">
+                View Portfolio
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -123,5 +127,6 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
