@@ -7,7 +7,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://facundobuilder.com/sitemap.xml',
+    sitemap: 'https://facunoconstruction.com/sitemap.xml',
   };
 }
+
 

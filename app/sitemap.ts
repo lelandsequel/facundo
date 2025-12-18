@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { services, locations } from '@/lib/pseo-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://facundobuilder.com';
+  const baseUrl = 'https://facunoconstruction.com';
 
   // Core pages
   const routes = [
@@ -39,4 +39,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...routes, ...serviceRoutes, ...pseoRoutes];
 }
+
 
