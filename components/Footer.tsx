@@ -5,11 +5,13 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="font-serif text-2xl font-bold tracking-wider mb-4">
-              FACUNDO <span className="text-orange-500">BUILDERS</span>
-            </h3>
+        <div className="grid md:grid-cols-4 gap-8 mb-12 border-b border-gray-100 pb-12">
+          <div className="col-span-1 md:col-span-1">
+            <Link href="/" className="flex items-center space-x-2 mb-6">
+              <span className="font-serif text-2xl font-bold tracking-tighter text-gray-900">
+                FACUNDO <span className="text-orange-600">CONSTRUCTION</span>
+              </span>
+            </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
               Building legacies in Houston for over 20 years. We specialize in custom homes, luxury remodeling, and commercial construction with an unwavering commitment to quality.
             </p>
@@ -53,11 +55,12 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Facundo Home Builders. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <p>&copy; {new Date().getFullYear()} Facundo Construction. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
 }
+
 

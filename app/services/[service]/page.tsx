@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ service: 
   }
 
   return {
-    title: `${service.title} Services in Houston | Facundo Builders`,
+    title: `${service.title} Services in Houston | Facundo Construction`,
     description: service.shortDescription,
   };
 }
@@ -107,5 +107,6 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
     </div>
   );
 }
+
 
 

@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ service: 
   }
 
   return {
-    title: `${service.title} in ${location.name} | Facundo Builders`,
-    description: `Expert ${service.title.toLowerCase()} in ${location.name}, Houston (${location.zipCodes.join(', ')}). ${service.shortDescription}`,
+    title: `${service.title} in ${location.name} | Facundo Construction`,
+    description: `Professional ${service.title.toLowerCase()} services in ${location.name}. ${service.shortDescription}`,
   };
 }
 
@@ -74,8 +74,8 @@ export default async function ServiceLocationPage({ params }: { params: Promise<
             <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">
               Premier {service.title} for {location.name} Residents
             </h2>
-            <p className="lead">
-              At Facundo Builders, we understand the unique architectural requirements and zoning nuances of {location.name}. Whether you are looking to build a new custom estate or renovate a historic property, our team has the local expertise to guide you.
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              At Facundo Construction, we understand the unique architectural requirements and zoning nuances of {location.name}. Whether you are looking to build a new custom estate or renovate a historic property, our team has the local expertise to guide you.
             </p>
             <p>
               {service.fullDescription}
@@ -159,5 +159,6 @@ export default async function ServiceLocationPage({ params }: { params: Promise<
     </div>
   );
 }
+
 
 
